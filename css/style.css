@@ -1,0 +1,32 @@
+:root{
+    --mainOrange: #FBB472;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+body{
+    background-color: var(--mainOrange);
+}
+
+header {
+    display: flex;
+    background-color: black;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+header img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+header  nav  ul{
+    display: flex;
+    gap: 30px;
+
+}
+header nav ul li{
+    background-color: pink;
+}
