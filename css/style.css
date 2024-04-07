@@ -5,6 +5,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 /* HEADER */
 body{
@@ -17,16 +24,60 @@ header {
     margin-top: 30px;
     justify-content: space-between;
 }
-header img{
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-}
-header  nav  ul{
+header > nav{
     display: flex;
     gap: 30px;
-
+    justify-content: center;
+    align-items: center;
+}
+header > nav > ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 header nav ul li{
-    background-color: pink;
+    list-style-type: none;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li .botao-fazer-pedido{
+   margin-right: 20px;
+   background-color: var(--mainOrange);
+   padding: 10px;
+   border-radius: 20px;
+   color: black;
+}
+/* MAIN */
+main{
+    background-color: rgb(0, 0, 119);
+    margin: 20px 0;
+}
+main > h1{
+    font-size: 20px;
+}
+main h2{
+    font-size: 40px;
+}
+main p{
+    font-size: 10px;
+}
+/* FOOTER */
+footer p{
+    display: inline;
+    color: white;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+}
+footer .teste{
+    color: #FBB472;
+}
+.fa-facebook, .fa-instagram, .fa-whatsapp{
+    color: var(--mainOrange);
+}
+.fa-user, .fa-phone{
+    color: white;
 }
