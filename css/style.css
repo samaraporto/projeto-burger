@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .logo{
@@ -52,7 +53,7 @@ header nav ul li .botao-fazer-pedido{
 }
 /* MAIN */
 main{
-    background-color: rgb(0, 0, 119);
+    background-color: rgb(255, 255, 255);
     margin: 20px 0;
 }
 main > h1{
@@ -64,13 +65,31 @@ main h2{
 main p{
     font-size: 10px;
 }
+
 /* FOOTER */
+
 footer p{
     display: inline;
     color: white;
 }
 footer{
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0);
+}
+footer .social-media ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    margin-right: 5px;
+}
+footer .sobre{
+    display: flex;
+}
+footer .sobre ul{
+    margin-top: 15px;
 }
 footer .teste{
     color: #FBB472;
