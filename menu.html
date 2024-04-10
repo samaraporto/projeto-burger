@@ -4,78 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/menuStyle.css">
 </head>
 <body>
-    <h1>Cardápio</h1>
-    <div class="container">
-        <h1>Burgers:</h1>
-        <div class="produto">
-            <img src="" alt="choripão">
-            <span>#1</span>
-            <h1>Choripão</h1>
-            <p>Paõ tradicional, nossa maionese da casa,
-                 linguiça toscana na brasa, queijo qualho,
-                  molho de chimichurri e ketchup caseiro
-            </p>
-            <span class="preco">R$15,00</span>
+    <header>
+        <img src="./public/img/header-image.svg" alt="">
+    </header>
+    <div class="cardapio">
+        <div>
+            <img src="./public/img/side_bar.svg" alt="">
         </div>
-        <div class="produto">
-            <img src="" alt="cheeseburguer">
-            <span>#2</span>
-            <h1>Cheeseburguer</h1>
-            <p>Pão brioche, maionese de casa, 150g de
-                carne assda na churascaria, queijo 
-               muçarela e ketchup de casa
-            </p>
-            <span class="preco">R$18,00</span>
+        <div>
+            <h1>Cardápio</h1>
         </div>
-        <div class="produto">
-            <img src="" alt="falso fit">
-            <span>#3</span>
-            <h1>Falso fit</h1>
-            <p>Pão tradicional, maionese caseira,
-                alface, tomate, cebola, 150g de carne
-                 assada na brasa, queijo muçarela e ketchup
-                da casa
-            </p>
-            <span class="preco">R$19,50</span>
-        </div>
-        <div class="produto">
-            <img src="" alt="provoloneburguer">
-            <span>#4</span>
-            <h1>Provoloneburguer</h1>
-            <p>
-                Pão brioche, maionese da casa, 150g
-                de carne assada na brasa, queijo
-                provolone, cebola caramelizada, 
-                batata chips e ketchup
-            </p>
-            <span class="preco">R$21,50</span>
-        </div>
-        <div class="produto">
-            <img src="" alt="cheddar bacon">
-            <span>#5</span>
-            <h1>Cheddar Bacon</h1>
-            <p>
-                Pão australiano, maionese da casa, 150g
-                de carne assada na brasa, 
-                cheddar cremoso, cebola
-                caramelizada e ketchup
-            </p>
-            <span class="preco">R$23,00</span>
-        </div>
-        <div class="produto">
-            <img src="" alt="catupiry bacon">
-            <span>#6</span>
-            <h1>Catupiry Bacon</h1>
-            <p>
-                Pão brioche, maionese da casa, alface, 150g 
-                de carne assada na brasa, tomate, 
-                queijo catupiry, tiras de bacon e ketchup
-            </p>
-            <span class="preco">R$25,00</span>
+        <div>
+            <img src="./public/img/side_bar.svg" alt="">
         </div>
     </div>
+    <div class="container">
+        <div class="burgers">
+            <p>Burgers:</p>
+        </div>
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/choripao-image.jpeg" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#1</p>
+                <p class="item-name">Choripão</p>
+                <p>Paõ tradicional, nossa maionese da casa,
+                linguiça toscana na brasa, queijo qualho,
+                molho de chimichurri e ketchup caseiro
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$15,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/cheeseburguer-image.png" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#2</p>
+                <p class="item-name">Cheeseburguer</p>
+                <p>
+                    Pão brioche, maionese de casa, 150g de
+                    carne assda na churascaria, queijo 
+                    muçarela e ketchup de casa
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$18,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/falsofit-image.png" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#3</p>
+                <p class="item-name">Falso fit</p>
+                <p>
+                    Pão tradicional, maionese caseira,
+                    alface, tomate, cebola, 150g de carne assada na brasa, queijo muçarela e ketchup da casa
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$19,50</p>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/provolone-image.png" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#4</p>
+                <p class="item-name">Provoloneburguer</p>
+                <p>
+                    Pão brioche, maionese da casa, 150g de carne assada na brasa, queijo provolone, cebola caramelizada, batata chips e ketchup
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$21,50</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/cheddar-image.png" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#5</p>
+                <p class="item-name">Cheddar bacon</p>
+                <p>
+                    Pão australiano, maionese da casa, 150g de carne assada na brasa, 
+                    cheddar cremoso, cebola caramelizada e ketchup
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$23,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <div>
+                <img class="burger-img" src="./public/img/catupiry-image.png" alt="choripão">
+            </div>
+            <div class="description">
+                <p class="number-burger">#6</p>
+                <p class="item-name">Catupiry bacon</p>
+                <p>
+                    Pão brioche, maionese da casa, alface, 150g de carne assada na brasa, tomate, 
+                    queijo catupiry, tiras de bacon e ketchup
+                </p>
+            </div>
+            <div class="div-preco">
+                <div class="preco">
+                    <p>R$25,00</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <img src="./public/img/footer-image.svg" alt="">
+    </footer>
 </body>
 </html>

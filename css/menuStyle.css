@@ -1,0 +1,95 @@
+:root{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+
+
+header img{
+    width: 100%;
+    max-height: 100px;
+}
+
+footer img{
+    width: 100%;
+    max-height: 100px;
+}
+
+.burgers{
+    align-self: flex-start;
+    padding-left: 527px;
+    margin-top: 53px;
+}
+.burgers p{
+    color: #FFB759;
+    font-size: 80px;
+}
+
+.cardapio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 46px;
+}
+
+.cardapio h1{
+    color: #BE9157;
+    font-size: 70px;
+}
+
+.produto img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.produto{
+    display: flex;
+    gap: 33px;
+    padding-top: 104px;
+}
+.item-name{
+    font-size: 50px;
+    color: #BE9157;
+}
+
+.number-burger{
+    font-size: 35px;
+}
+
+.description{
+    max-width: 430px;
+}
+
+.div-preco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco{
+    background-color: #FBB472;
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 35px;
+}
+.preco p{
+    color: black;
+}
