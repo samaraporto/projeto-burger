@@ -1,12 +1,14 @@
 :root{
     --mainOrange: #FBB472;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: "Poppins", sans-serif;
 }
 
 .logo{
@@ -52,18 +54,35 @@ header nav ul li .botao-fazer-pedido{
    color: black;
 }
 /* MAIN */
-main{
-    background-color: rgb(255, 255, 255);
+.principal{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
     margin: 20px 0;
+    padding-left: 30px;
 }
-main > h1{
+.principal .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.principal .main-burguer{
+    width: 600px;
+    height: 600px;
+}
+.principal .intro h1{
     font-size: 20px;
+    font-weight: bolder;
+    color: var(--mainOrange);
 }
-main h2{
+.principal .intro h2{
     font-size: 40px;
+    font-weight: black bolder;
+    color: var(--mainOrange);
 }
-main p{
+.principal .intro p{
     font-size: 10px;
+    color: var(--mainOrange);
 }
 
 /* FOOTER */
@@ -76,14 +95,17 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
+    height: 400;
 }
 footer .social-media ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60px;
+    width: 150px;
     height: 40px;
+    padding-top: 20px;
     margin-right: 5px;
+    font-size: 40px;
 }
 footer .sobre{
     display: flex;
@@ -99,4 +121,15 @@ footer .teste{
 }
 .fa-user, .fa-phone{
     color: white;
+}
+main .pedido{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .pedido .itens{
+    background-color: white;
+    width: 250px;
+    height: 100px;
 }
