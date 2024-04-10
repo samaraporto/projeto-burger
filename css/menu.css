@@ -1,0 +1,102 @@
+:root{
+    --mainOrange: #FBB472;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+/* HEADER */
+body{
+    background-color: var(--mainOrange);
+}
+
+header {
+    display: flex;
+    background-color: black;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+header > nav{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+header > nav > ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li .botao-fazer-pedido{
+   margin-right: 20px;
+   background-color: var(--mainOrange);
+   padding: 10px;
+   border-radius: 20px;
+   color: black;
+}
+/* MAIN */
+main{
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0;
+}
+main > h1{
+    font-size: 20px;
+}
+main h2{
+    font-size: 40px;
+}
+main p{
+    font-size: 10px;
+}
+
+/* FOOTER */
+
+footer p{
+    display: inline;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+footer .social-media ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    margin-right: 5px;
+}
+footer .sobre{
+    display: flex;
+}
+footer .sobre ul{
+    margin-top: 15px;
+}
+footer .teste{
+    color: #FBB472;
+}
+.fa-facebook, .fa-instagram, .fa-whatsapp{
+    color: var(--mainOrange);
+}
+.fa-user, .fa-phone{
+    color: white;
+}
