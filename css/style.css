@@ -59,7 +59,7 @@ header nav ul li .botao-fazer-pedido{
 .principal{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-image: url("https://endtimeheadlines.org/wp-content/uploads/2019/09/shutterstock_1194331717.jpg");
     margin: 20px 0;
     padding-left: 30px;
 }
@@ -141,7 +141,10 @@ main .pedido .itens{
     width: 250px;
     height: 100px;
 }
-
+footer .sobre a:hover{
+    text-decoration: underline;
+    font-size: 17px;
+}
 /* PROMOÇÃO */
 
 .container{
@@ -250,4 +253,27 @@ main .pedido .itens{
 
 .inside-att{
    padding: 26px 30px;
+}
+/* QUEM SOMOS? */
+.sn{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+main .quem-somos{
+    display: flex;
+}
+.quem-somos img{
+    box-shadow: 2px 2px 5px black;
+}
+.quem-somos h1{
+    margin-bottom: 10px;
+}
+main .quem-somos div{
+    margin-left: 3em;
+}
+.quem-somos p{
+    width: 200px;
 }
