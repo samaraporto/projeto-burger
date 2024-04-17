@@ -60,8 +60,11 @@ header nav ul li .botao-fazer-pedido{
     display: flex;
     justify-content: space-between;
     background-image: url("https://endtimeheadlines.org/wp-content/uploads/2019/09/shutterstock_1194331717.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 20px 0;
     padding-left: 30px;
+    height: 660px;
 }
 .principal .intro{
     display: flex;
@@ -69,22 +72,29 @@ header nav ul li .botao-fazer-pedido{
     justify-content: center;
 }
 .principal .main-burguer{
-    width: 600px;
-    height: 600px;
+    width: 512px;
+    height: 512px;
+}
+.burger-svg-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .principal .intro h1{
-    font-size: 20px;
+    font-size: 80px;
     font-weight: bolder;
     color: var(--mainOrange);
+    margin-top: 22px;
 }
 .principal .intro h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: black bolder;
     color: var(--mainOrange);
 }
 .principal .intro p{
-    font-size: 10px;
+    font-size: 20px;
     color: var(--mainOrange);
+    margin-top: 22px;
 }
 
 /* FOOTER */
@@ -269,11 +279,19 @@ main .quem-somos{
     box-shadow: 2px 2px 5px black;
 }
 .quem-somos h1{
+    font-size: 60px;
     margin-bottom: 10px;
 }
-main .quem-somos div{
-    margin-left: 3em;
+.quem-somos div{
+    width: 438px;
+    height: 213px;
+    margin-left: 104px;
 }
 .quem-somos p{
-    width: 200px;
+    font-size: 24px;
+}
+
+.quem-somos img{
+    width: 400px;
+    height: 400px;
 }
