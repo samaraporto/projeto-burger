@@ -40,6 +40,7 @@ header > nav > ul{
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-right: 10px
 }
 header nav ul li{
     list-style-type: none;
@@ -99,7 +100,7 @@ header nav ul li .botao-fazer-pedido{
 
 /* FOOTER */
 
-footer p{
+footer a{
     display: inline;
     color: white;
 }
@@ -150,10 +151,32 @@ main .pedido .itens{
     background-color: white;
     width: 250px;
     height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-whatsapp:hover{
+    color: rgb(7, 160, 45);
+}
+.fa-instagram:hover{
+    color: rgb(209, 20, 99);
+}
+.fazer-pedido h1{
+    margin: 20px;
+ }
+ .fazer-pedido label{
+     margin-top: 10px;
+ }
+output{
+    background-color: white;
+    padding: 3px;
+    margin: 5px 0 18px 0;
+    border: 2px solid rgb(216, 216, 216);
 }
 footer .sobre a:hover{
-    text-decoration: underline;
-    font-size: 17px;
+    color: red;
 }
 /* PROMOÇÃO */
 
@@ -205,7 +228,7 @@ footer .sobre a:hover{
 }
 
 .preco{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     max-width: 375px;
     max-height: 209px;
     color: white;
@@ -219,6 +242,10 @@ footer .sobre a:hover{
 
 .preco div{
     padding: 15px;
+}
+
+.preco .ant-preco p{
+    font-size: 14px;
 }
 
 .preco-promocional{

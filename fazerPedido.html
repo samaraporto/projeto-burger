@@ -15,7 +15,6 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="sobreNos.html">Sobre nós</a></li>
                 <li><a href="promocao.html">Promoção do dia</a></li>
-                <li><a href="fazerPedido.html" class="botao-fazer-pedido">Fazer pedido</a></li>
             </ul>
         </nav>
     </header>
@@ -31,14 +30,17 @@
             </div>
 
             <label for="endereco">Endereço</label>
-            <input type="text" id="endereco"><br>
+            <input type="text" id="endereco" autocomplete="off"><br>
 
             <label for="total">Total</label>
-            <input type="number" id="total"><br>
+            <output id="total">R$50,00</output>
 
             <label for="pagamento">Forma de pagamento</label>
-            <select name="" id="pagamento">
-                <option value=""></option>
+            <select name="pagamento" id="pagamento">
+                <option value="vista">À vista</option>
+                <option value="par">Parcelado</option>
+                <option value="cre">Crédito</option>
+                <option value=" deb">Débito</option>
             </select>
 
         </div>

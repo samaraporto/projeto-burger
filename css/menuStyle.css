@@ -23,15 +23,6 @@ footer img{
     margin-top: 120px;
 }
 
-.burgers{
-    align-self: flex-start;
-    padding-left: 527px;
-    margin-top: 53px;
-}
-.burgers p{
-    color: #FFB759;
-    font-size: 80px;
-}
 
 .cardapio{
     display: flex;
@@ -56,6 +47,13 @@ footer img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.burgers{
+    margin-top: 53px;
+}
+.burgers p{
+    color: #FFB759;
+    font-size: 70px;
 }
 .produto{
     display: flex;

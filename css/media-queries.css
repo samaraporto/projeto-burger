@@ -1,0 +1,27 @@
+@media screen and (max-width: 607px){
+    header ul{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px 30px 15px 0px;
+    }
+}
+@media only screen and (max-width: 855px) {
+    .principal{
+     flex-direction: column;
+    }
+    .principal .main-burguer{
+     width: 312px;
+     height: 312px;
+ }
+ }
+ @media only screen and (max-width: 429px) {
+     body{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+     .principal .main-burguer{
+         width: 212px;
+         height: 212px;
+  }
+ } 
