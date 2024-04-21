@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fazer pedido</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <img class="logo" src="./public/img/logo.jpg" alt="logo da hamburgueria">
-        <nav>
-            <ul>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="sobreNos.html">Sobre nós</a></li>
-                <li><a href="promocao.html">Promoção do dia</a></li>
-            </ul>
-        </nav>
+      <img
+        class="logo"
+        src="./public/img/logo.jpg"
+        alt="logo da hamburgueria"
+      />
+      <nav>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="sobreNos.html">Sobre nós</a></li>
+          <li><a href="promocao.html">Promoção do dia</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="fazer-pedido">
-        <div class="fazer-pedido">
-            <h1>Resumo da compra</h1>
-            <div class="compra">
-                <h2>Produtos adicionados</h2>
-                <div class="lista-itens">
-                    <img src="public/img/falso-fit-image.jpg" alt="falso fit">
-                    <p>Falso fit x 1</p>
-                </div>
-                <div class="botao-add-produto">Adicionar mais produtos</div>
-                <output>Total: R$13,00</output>
-                <label for="pag">Forma de pagamento: </label>
-                <select name="pag" id="pag">
-                    <option value="credito">Crédito</option>
-                    <option value="debito">Débito</option>
-                </select>
-                <label for="endereco">Endereco:</label>
-                <input type="text" id="endereco" required>
-                <div class="botao-finalizar-pedido">Finalizar pedido</div>
+      <div class="fazer-pedido">
+        <h1>Resumo da compra</h1>
+        <div class="compra">
+          <h2>Produtos adicionados</h2>
+          <div class="lista-itens">
+            <div>
+              <img src="public/img/falso-fit-image.jpg" alt="falso fit" />
             </div>
+            <div>
+              <p>Falso fit x 1</p>
+            </div>
+          </div>
+          <div class="botao-add-produto">Adicionar mais produtos</div>
+          <output>Total: R$13,00</output>
+          <label for="pag">Forma de pagamento: </label>
+          <select name="pag" id="pag">
+            <option value="credito">Crédito</option>
+            <option value="debito">Débito</option>
+          </select>
+          <label for="endereco">Endereco:</label>
+          <input type="text" id="endereco" required />
+          <div class="botao-finalizar-pedido">Finalizar pedido</div>
         </div>
+      </div>
     </main>
     <footer>
-        <nav class="sobre">
-                <img class="logo" src="public/img/logo.jpg" alt="logo da hamburgueria">
-                <ul>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-burger"></i>Trabalhe conosco
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-phone"></i>Fale conosco
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <nav  class="social-media">
-                <ul>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </nav>
+      <nav class="sobre">
+        <img
+          class="logo"
+          src="public/img/logo.jpg"
+          alt="logo da hamburgueria"
+        />
+        <ul>
+          <li>
+            <a href=""> <i class="fas fa-burger"></i>Trabalhe conosco </a>
+          </li>
+          <li>
+            <a href=""> <i class="fas fa-phone"></i>Fale conosco </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-media">
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
