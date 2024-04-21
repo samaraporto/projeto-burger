@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 620px){
     header{
         display: flex;
         flex-direction: column;
@@ -24,7 +24,10 @@
     .principal .main-burguer{
      width: 312px;
      height: 312px;
- }
+    }
+    .intro h2{
+       margin-top: 30px;
+    }
  }
  @media only screen and (max-width: 429px) {
      body{
