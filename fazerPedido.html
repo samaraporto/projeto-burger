@@ -20,31 +20,47 @@
     </header>
 
     <main  class="fazer-pedido">
-        <div class="pedido">
-            <h1>Lista de pedidos</h1>
-            <div class="itens">
-                <p>item1</p>
-                <p>item2</p>
-                <p>item3</p>
-                
+        <h1>Resumo da commpra:</h1>
+        <div class="compra">
+            <h2>#Pedido</h2>
+            <div sub-compra>
+                <img src="public/img/falso-fit-image.jpg" alt="falso fit">
+                <p>Falso fit x 1</p>
             </div>
-
-            <label for="endereco">Endereço</label>
-            <input type="text" id="endereco" autocomplete="off"><br>
-
-            <label for="total">Total</label>
-            <output id="total">R$50,00</output>
-
-            <label for="pagamento">Forma de pagamento</label>
-            <select name="pagamento" id="pagamento">
-                <option value="vista">À vista</option>
-                <option value="par">Parcelado</option>
-                <option value="cre">Crédito</option>
-                <option value=" deb">Débito</option>
+            <output>Total: R$13,00</output>
+            <label for="pag">Forma de pagamento: </label>
+            <select name="pag" id="pag">
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
             </select>
-
+            <label for="endereco">Endereco:</label>
+            <input type="text" id="endereco" required>
+            <div>Finalizar pedido</div>
         </div>
     </main>
-
+    <footer>
+        <nav class="sobre">
+                <img class="logo" src="public/img/logo.jpg" alt="logo da hamburgueria">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-burger"></i>Trabalhe conosco
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fas fa-phone"></i>Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav  class="social-media">
+                <ul>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+    </footer>
 </body>
 </html>
