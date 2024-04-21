@@ -324,3 +324,58 @@ main .quem-somos{
     width: 400px;
     height: 400px;
 }
+/* fazer pedido */
+main#fazer-pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+}
+.fazer-pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: var(--mainOrange);
+    width: 400px;
+    margin: 100px 0;
+}
+.fazer-pedido .compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fazer-pedido .compra .lista-itens{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.fazer-pedido img{
+    width: 60px;
+    height: 60px;
+}
+.botao-add-produto{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.botao-finalizar-pedido{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 20px 0;
+}
