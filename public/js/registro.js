@@ -1,26 +1,28 @@
-document.querySelector('form').addEventListener('submit', async(e)=>{
-    e.preventDefault()
-
-    const email = document.getElementById('email').value
-    const senha = document.getElementById('senha').value
-
-    try{
-        const res = await fetch('/user/create-user',{
-            method: 'POST',
-            headers:{
-                'Content-Type' : 'application/json'
-            },
-            body: JSON.stringify({email , senha})
-        })
-        const data = await res.json()
-        if(res.ok){
-            console.log('Usuario criado!');
-            
-        }else{
-            console.log("Ocorreu um problema no cadastro!");
-        }
-    }catch(e){
-        console.log("erro na requisição.", e);
-        
+document.querySelector('form').addEventListener('submit', async (event) => {
+    event.preventDefault(); // Previne o comportamento padrão do formulário
+  
+    const email = document.querySelector('#email').value;
+    const senha = document.querySelector('#senha').value;
+  
+    try {
+      const response = await fetch('/user/create-user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name: email, password: senha }),
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        console.log('Usuário criado com sucesso');
+      } else {
+        console.log();
+        (`Erro: ${data.message}`);
+      }
+    } catch (error) {
+      console.log(`erro na requisição: ${error.message}`);
     }
-})
+  });
+  
