@@ -1,5 +1,5 @@
 document.querySelector('form').addEventListener('submit', async (event) => {
-    event.preventDefault(); // Previne o comportamento padrão do formulário
+    event.preventDefault(); 
   
     const email = document.querySelector('#email').value;
     const senha = document.querySelector('#senha').value;
