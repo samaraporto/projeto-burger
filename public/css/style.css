@@ -407,3 +407,81 @@ main#fazer-pedido {
   border-radius: 6px;
   font-weight: bold;
 }
+/* Registro */
+
+#main-registro, #main-login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-registro > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+  width: 70%;
+  height: 90%;
+  background-color: black;
+  color: white;
+
+  border-radius: 20px;
+}
+#main-registro > form > div > input{
+  border-radius: 50px;
+  border: none;
+  height: 30px;
+  width: 20rem;
+}
+#main-registro > form > div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+#main-registro > form label{
+  font-size: .8rem;
+  margin-left: .3rem;
+  margin-bottom: 3px;
+}
+#main-registro > form > button{
+  background-color: rgb(255, 255, 255);
+  margin: 2rem 0 0 10rem;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+}
+#main-registro > form > p{
+  display: flex;
+  margin-right: 6rem;
+}
+#main-registro > form span{
+  font-size: small;
+  font-weight: 100;
+}
+/* Login */
+#main-registro > form > h1{
+  margin-bottom: 3rem;
+}
+#main-registro > form > #entrar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main-registro > form > #entrar > button{
+  border-radius: 1rem;
+  padding: .3rem;
+  width: 115%;
+  margin-bottom: 8px;
+}
+#main-registro > form > #entrar > p{
+  font-size: 9px;
+}
+#main-registro > form > #entrar > p > a{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="./img/logo.jpg" alt="logo da hamburgueria" />
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fa-solid fa-house-chimney-window"></i
+                ></a>
+              </li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="sobreNos.html">Sobre nós</a></li>
+              <li><a href="promocao.html">Promoção do dia</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main id="main-registro">
+        <form method="post">
+            <h1>Login</h1>
+
+            <div>
+                <label for="email-login">Email</label>
+                <input type="email" name="email-login" id="email-login" placeholder="Email" required>
+            </div>
+
+            <div>
+                <label for="senha-login">Senha</label>
+                <input type="password" placeholder="Senha" name="senha-login" id="senha-login">
+            </div>
+
+            <div id="entrar">
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="./registro.html">Registre-se aqui</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
