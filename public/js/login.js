@@ -43,6 +43,9 @@ async function isLogged() {
       },
     });
     const data = await getProfile.json();
+    if (!data.user) {
+      return;
+    }
     window.location.href = "index.html";
     console.log(data.user);
   } catch (error) {
