@@ -24,7 +24,10 @@ userRouter.post("/user/login", async (req, res) => {
   try {
     const { name, password } = req.body;
     const loggedUser = await loginUser(name, password);
-    return res.status(200).json(loggedUser);
+    if (loggedUser.token) {
+      return res.status(200).json(loggedUser);
+    }
+    return res.status(500).json(loggedUser);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
