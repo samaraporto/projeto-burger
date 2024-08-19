@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 :root {
   --mainOrange: #fbb472;
   font-family: "Roboto", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +53,7 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: rgb(172, 172, 172);
-  transition: .3s all ease-in;
+  transition: 0.3s all ease-in;
 }
 header nav ul li .botao-fazer-pedido {
   font-size: 16px;
@@ -62,7 +63,7 @@ header nav ul li .botao-fazer-pedido {
   border-radius: 20px;
   color: black;
 }
-header #butao-login{
+header #butao-login {
   background-color: white;
   color: black;
   padding: 3px;
@@ -171,15 +172,15 @@ main .pedido .itens {
 }
 .fa-facebook:hover {
   color: blue;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 .fa-whatsapp:hover {
   color: rgb(7, 160, 45);
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 .fa-instagram:hover {
   color: rgb(209, 20, 99);
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 .fazer-pedido h1 {
   margin: 20px;
@@ -195,7 +196,7 @@ output {
 }
 footer .sobre a:hover {
   color: rgb(179, 179, 179);
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 /* PROMOÇÃO */
 
@@ -423,7 +424,8 @@ main#fazer-pedido {
 }
 /* Registro */
 
-#main-registro, #main-login {
+#main-registro,
+#main-login {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -431,11 +433,11 @@ main#fazer-pedido {
   justify-content: center;
 }
 
-#main-registro > form{
+#main-registro > form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   align-items: center;
   width: 70%;
   height: 90%;
@@ -444,57 +446,67 @@ main#fazer-pedido {
 
   border-radius: 20px;
 }
-#main-registro > form > div > input{
+#main-registro > form > div > input {
   border-radius: 50px;
   border: none;
   height: 30px;
   width: 20rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-#main-registro > form > div{
+#main-registro > form > div {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
-#main-registro > form label{
-  font-size: .8rem;
-  margin-left: .3rem;
-  margin-bottom: 3px;
+#main-registro > form > label {
+  font-size: 0.9rem;
+  padding-left: 15px;
 }
-#main-registro > form > button{
+
+#main-registro > form > div > label {
+  padding-bottom: 10px;
+}
+
+#main-registro > form > button {
   background-color: rgb(255, 255, 255);
   margin: 2rem 0 0 10rem;
   border-radius: 8px;
   padding: 5px;
   border: none;
+  cursor: pointer;
 }
-#main-registro > form > p{
+#main-registro > form > p {
   display: flex;
   margin-right: 6rem;
 }
-#main-registro > form span{
+#main-registro > form span {
   font-size: small;
   font-weight: 100;
 }
 /* Login */
-#main-registro > form > h1{
+#main-registro > form > h1 {
   margin-bottom: 3rem;
 }
-#main-registro > form > #entrar{
+#main-registro > form > #entrar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
 }
-#main-registro > form > #entrar > button{
+#main-registro > form > #entrar > button {
   border-radius: 1rem;
-  padding: .3rem;
+  padding: 0.3rem;
   width: 115%;
   margin-bottom: 8px;
+  cursor: pointer;
 }
-#main-registro > form > #entrar > p{
+#main-registro > form > #entrar > p {
   font-size: 9px;
 }
-#main-registro > form > #entrar > p > a{
+#main-registro > form > #entrar > p > a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
