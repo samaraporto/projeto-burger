@@ -1,6 +1,11 @@
+import { isLogged } from "./login.js";
 window.addEventListener("load", main);
 
 async function main() {
+  if (localStorage.getItem("Token")) {
+    isLogged();
+    console.log("aqui");
+  }
   document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 

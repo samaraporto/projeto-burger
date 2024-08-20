@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
       <img class="logo" src="./img/logo.jpg" alt="logo da hamburgueria" />
       <nav>
@@ -27,44 +27,72 @@
           <li><a href="login.html" id="butao-login">Login</a></li>
         </ul>
       </nav>
-      </header>
-      <main id="main-registro">
-        <form method="POST" autocomplete="off">
-            <h1>Registro</h1>
-            <div>
-              <label for="nome">Nome</label>
-              <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
-            </div>
+    </header>
+    <main id="main-registro">
+      <form method="POST" autocomplete="off">
+        <h1>Registro</h1>
+        <div>
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome completo"
+            required
+          />
+        </div>
 
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="exemple@email.com">
-            </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="exemple@email.com"
+          />
+        </div>
 
-            <div>
-              <label for="senha">Senha</label>
-              <input type="password" id="senha" name="senha" required placeholder="Senha">
-            </div>
+        <div>
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            required
+            placeholder="Senha"
+          />
+        </div>
 
-            <div>
-              <label for="confirmação-senha">Confirmação de senha</label>
-              <input type="password" id="confirmação-senha" name="confirmação-senha" required placeholder="Confirme sua senha">
-            </div>
+        <div>
+          <label for="confirmação-senha">Confirmação de senha</label>
+          <input
+            type="password"
+            id="confirmação-senha"
+            name="confirmação-senha"
+            required
+            placeholder="Confirme sua senha"
+          />
+        </div>
 
-            <div>
-              <label for="telefone">Telefone</label>
-              <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx">
-            </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx" />
+        </div>
 
-            <p>
-              <input type="checkbox" name="termos-condicoes" id="termos-condicoes">
-              <span>Aceito Termos e condições</span>
-            </p>
+        <p>
+          <input
+            type="checkbox"
+            name="termos-condicoes"
+            id="termos-condicoes"
+          />
+          <span>Aceito Termos e condições</span>
+        </p>
 
-            <button type="submit">Registrar</button>
-        </form>
-      </main>
+        <button type="submit">Registrar</button>
+      </form>
+    </main>
 
-      <script src="./js/registro.js"></script>
-</body>
+    <script type="module" src="./js/registro.js"></script>
+  </body>
 </html>

@@ -52,3 +52,5 @@ async function isLogged() {
     console.log("erro");
   }
 }
+
+export { isLogged };
