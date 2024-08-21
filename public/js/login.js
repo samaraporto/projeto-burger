@@ -4,6 +4,7 @@ async function main() {
   if (localStorage.getItem("Token")) {
     isLogged();
   }
+
   document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -16,7 +17,7 @@ async function main() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name: email, password: senha }),
+        body: JSON.stringify({ email: email, password: senha }),
       });
 
       const data = await response.json();
@@ -26,7 +27,7 @@ async function main() {
         localStorage.setItem(`Token`, token);
         window.location.href = "index.html";
       } else {
-        `Erro: ${data.message}`;
+        console.log(`Erro: ${data.error || "Erro ao fazer login"}`);
       }
     } catch (error) {
       console.log(`erro na requisição: ${error.message}`);
@@ -43,13 +44,15 @@ async function isLogged() {
       },
     });
     const data = await getProfile.json();
-    if (!data.user) {
-      return;
+    if(data.error || !data.user){
+      localStorage.removeItem('Token')
+      window.location.href = 'login.html'
+    }else{
+      console.log(`usuario logado: ${data.user}`);
+      window.location.href = 'login.html'
     }
-    window.location.href = "index.html";
-    console.log(data.user);
   } catch (error) {
-    console.log("erro");
+    console.log("erro ao verificar token");
   }
 }
 

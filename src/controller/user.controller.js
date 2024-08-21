@@ -9,12 +9,12 @@ const userRouter = Router();
 
 userRouter.post("/user/create-user", async (req, res) => {
   try {
-    const { name, password } = req.body;
-    const user = await createUser(name, password);
-    if (user == undefined) {
-      return res.status(500).json({ message: "User already exists" });
+    const { name, email, password, phone_number } = req.body;
+    const result = await createUser(name, email, password, phone_number);
+    if (result === 'usuario ja existe!') {
+      return res.status(400).json({ message: result });
     }
-    return res.status(201).json({ message: user });
+    return res.status(201).json({ message: result });
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
@@ -22,12 +22,13 @@ userRouter.post("/user/create-user", async (req, res) => {
 
 userRouter.post("/user/login", async (req, res) => {
   try {
-    const { name, password } = req.body;
-    const loggedUser = await loginUser(name, password);
+    const { email, password } = req.body;
+    const loggedUser = await loginUser(email, password);
     if (loggedUser.token) {
       return res.status(200).json(loggedUser);
     }
-    return res.status(500).json(loggedUser);
+     // Se não houver token, é um erro de login
+    return res.status(401).json({message: loggedUser.error || 'falha no login'});
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
@@ -37,10 +38,11 @@ userRouter.get("/user/profile", async (req, res) => {
   try {
     const { authorization } = req.headers;
     if (!authorization) {
-      return res.status(401).json({ messeage: "Not authorized" });
+      return res.status(401).json({ message: "Not authorized" });
     }
     const token = authorization.split(" ")[1];
     const loggedUserByToken = await getUserProfile(token);
+    // Verifica se a resposta contém o perfil do usuário
     if (!loggedUserByToken) {
       return res.status(404).json(loggedUserByToken);
     }

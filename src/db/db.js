@@ -7,18 +7,25 @@ const dbPromise = open({
 });
 
 const createTableUsers = async () => {
-  const db = await dbPromise;
-  await db.exec(`
-            CREATE TABLE IF NOT EXISTS users (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT UNIQUE NOT NULL,
-                email TEXT UNIQUE NOT NULL,
-                password TEXT NOT NULL,
-                telefone TEXT
-            )
-        `);
+  try {
+    const db = await dbPromise;
+    await db.exec(`
+      CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT UNIQUE NOT NULL,
+        email TEXT UNIQUE NOT NULL,
+        password TEXT NOT NULL,
+        phone_number TEXT
+      )
+    `);
+    console.log("Tabela 'users' criada com sucesso.");
+  } catch (error) {
+    console.error("Erro ao criar a tabela 'users':", error.message);
+  }
 };
 
-await createTableUsers();
+(async () => {
+  await createTableUsers();
+})();
 
 export { dbPromise };
