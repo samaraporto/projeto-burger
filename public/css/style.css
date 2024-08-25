@@ -363,6 +363,7 @@ main#fazer-pedido {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .fazer-pedido .compra #lista-itens {
@@ -371,21 +372,24 @@ main#fazer-pedido {
   justify-content: space-between;
   width: 350px;
   padding: 10px;
-  height: 200px;
+
   margin-bottom: 20px;
-  flex-direction: row;
+  flex-direction: column;
   border: 2px solid black;
   border-radius: 8px;
+  flex-wrap: wrap;
 }
 
-ul#lista-itens {
+ul #lista-itens {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 }
 
-.lista-itens li {
-  margin-bottom: 10px; 
+#lista-itens li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fazer-pedido h1 {
@@ -515,9 +519,9 @@ ul#lista-itens {
   text-decoration: none;
   font-weight: bolder;
 }
-p#infos{
+p#infos {
   color: red;
   font-size: 11px;
-  margin-top: 10px ;
+  margin-top: 10px;
   text-align: center;
 }
