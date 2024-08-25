@@ -6,21 +6,21 @@ import {
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-const createUser = async (name,email, password, phone_number) => {
+const createUser = async (name, email, password, phone_number) => {
   try {
     const user = await getUserByEmail(email);
-    if(user){
-      return 'usuario ja existe!'
+    if (user) {
+      return "usuario ja existe!";
     }
 
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
     await insertUser(name, email, hashedPassword, phone_number);
     return "User created successfully";
-  } catch(e){
-    return `Failed to insert user: ${error.message}`
+  } catch (e) {
+    return `Failed to insert user: ${error.message}`;
   }
-}
+};
 
 const loginUser = async (email, password) => {
   try {
@@ -30,7 +30,7 @@ const loginUser = async (email, password) => {
       return { error: "Invalid email or password" };
     }
     const verifyUser = await bcrypt.compare(password, user.password);
-    if(!verifyUser){
+    if (!verifyUser) {
       return { error: "Invalid email or password" };
     }
 
@@ -41,8 +41,8 @@ const loginUser = async (email, password) => {
   } catch (e) {
     return { error: "Internal error" };
   }
-}
- 
+};
+
 const getUserProfile = async (token) => {
   try {
     const secret = "/mtYKEtBeHAWl6CtRBmwA98HRk";

@@ -18,14 +18,31 @@ const createTableUsers = async () => {
         phone_number TEXT
       )
     `);
-    console.log("Tabela 'users' criada com sucesso.");
+    //console.log("Tabela 'users' criada com sucesso.");
   } catch (error) {
     console.error("Erro ao criar a tabela 'users':", error.message);
   }
 };
 
-(async () => {
-  await createTableUsers();
-})();
+const createTableBurguers = async () => {
+  try {
+    const db = await dbPromise;
+    await db.exec(`
+      CREATE TABLE IF NOT EXISTS burguers (
+        id INTEGER PRIMARY KEY,
+        name TEXT UNIQUE NOT NULL,
+        description TEXT NOT NULL,
+        image_url TEXT NOT NULL,
+        price REAL NOT NULL
+      )
+    `);
+    //console.log("Tabela 'burguers' criada com sucesso.");
+  } catch (error) {
+    console.error("Erro ao criar a tabela 'burguers':", error.message);
+  }
+};
+
+await createTableUsers();
+await createTableBurguers();
 
 export { dbPromise };
