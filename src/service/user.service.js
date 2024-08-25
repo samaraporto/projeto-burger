@@ -57,4 +57,14 @@ const getUserProfile = async (token) => {
   }
 };
 
-export { createUser, loginUser, getUserProfile };
+const validadeToken = async (token) => {
+  try {
+    const secret = "/mtYKEtBeHAWl6CtRBmwA98HRk";
+    jwt.verify(token, secret);
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
+
+export { createUser, loginUser, getUserProfile, validadeToken };

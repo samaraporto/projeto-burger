@@ -5,8 +5,15 @@ const nomeUser = document.getElementById("user-nome");
 
 async function login() {
   const token = localStorage.getItem("Token");
+  const validadeToken = await fetch("http://localhost:3000/user/verify", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ token }),
+  });
 
-  if (token) {
+  if (token && validadeToken.ok) {
     butaoLogin.addEventListener("click", () => {
       localStorage.removeItem("Token");
       localStorage.removeItem("cart");
