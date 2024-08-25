@@ -365,7 +365,7 @@ main#fazer-pedido {
   align-items: center;
 }
 
-.fazer-pedido .compra .lista-itens {
+.fazer-pedido .compra #lista-itens {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -378,10 +378,14 @@ main#fazer-pedido {
   border-radius: 8px;
 }
 
-.lista-itens {
+ul#lista-itens {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.lista-itens li {
+  margin-bottom: 10px; 
 }
 
 .fazer-pedido h1 {
@@ -440,7 +444,7 @@ main#fazer-pedido {
 
   align-items: center;
   width: 70%;
-  height: 90%;
+  height: 95%;
   background-color: black;
   color: white;
 
@@ -510,4 +514,10 @@ main#fazer-pedido {
   color: white;
   text-decoration: none;
   font-weight: bolder;
+}
+p#infos{
+  color: red;
+  font-size: 11px;
+  margin-top: 10px ;
+  text-align: center;
 }

@@ -39,11 +39,11 @@
         <h1>Resumo da compra</h1>
         <div class="compra">
           <h2>Produtos adicionados</h2>
-          <div class="lista-itens">
+          <ul id="lista-itens">
             
-          </div>
+          </ul>
           <a href="./menu.html" class="botao-add-produto" target="_blank">Adicionar mais produtos</a>
-          <output>Total: R$0</output>
+          <output id="total-pedido">Total: R$</output>
           <label for="pag">Forma de pagamento: </label>
           <select name="pag" id="pag">
             <option value="credito">Crédito</option>
@@ -82,5 +82,6 @@
       </nav>
     </footer>
     <script src="./js/logout.js"></script>
+    <script src="./js/fazer-pedido.js"></script>
   </body>
 </html>

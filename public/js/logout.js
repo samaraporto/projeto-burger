@@ -9,6 +9,8 @@ async function login() {
     if (token) {
         butaoLogin.addEventListener('click', () => {
             localStorage.removeItem('Token');
+            localStorage.removeItem('cart');
+            window.location.reload()
             nomeUser.textContent = ''; 
         });
         butaoLogin.textContent = 'Log out';
@@ -29,8 +31,11 @@ async function login() {
             }
 
             const user = await response.json();
-            nomeUser.textContent = `Bem-vindo, ${user.user}!`; 
-            console.log('user:',user);
+            if(nomeUser){
+                nomeUser.textContent = `Bem-vindo, ${user.user}!`; 
+                console.log('user:',user);
+
+            }
             
 
         } catch (error) {

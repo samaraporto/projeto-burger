@@ -14,4 +14,10 @@ const getBurguerById = async (id) => {
   return burguer;
 };
 
-export { getBurguerById, insertBurguer };
+const getAllBurguers = async () => {
+  const db = await dbPromise;
+  const burguers = await db.all("SELECT * FROM burguers;");
+  return burguers;
+};
+
+export { getBurguerById, insertBurguer, getAllBurguers};

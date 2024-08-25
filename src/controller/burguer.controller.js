@@ -1,3 +1,4 @@
+import { getAllBurguers } from "../models/burguer.model.js";
 import { createBurguer, getBurguer } from "../service/burguer.service.js";
 import { Router } from "express";
 
@@ -34,5 +35,16 @@ burguerRouter.get("/burguer/recuperar/:id", async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
+
+
+burguerRouter.get("/burguers", async (req, res)=>{
+  try{
+    const burguers = await getAllBurguers()
+    if(!burguers) return res.status(500).json({error: "deu errado pegar todos os burguers"})
+    return res.status(200).json(burguers)
+  }catch(e){
+    return res.status(500).json({error: e})
+  }
+})
 
 export { burguerRouter };
