@@ -67,6 +67,13 @@ header #butao-login {
   border-radius: 50px;
 }
 
+.registrar-btn {
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 header nav ul li a:hover {
   color: rgb(172, 172, 172);
   transition: 0.3s all ease-in;
@@ -521,9 +528,16 @@ ul #lista-itens {
   text-decoration: none;
   font-weight: bolder;
 }
-p#infos {
+#infos {
   color: red;
   font-size: 11px;
   margin-top: 10px;
   text-align: center;
+}
+
+.registro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

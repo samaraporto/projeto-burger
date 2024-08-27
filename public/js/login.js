@@ -8,10 +8,9 @@ async function main() {
   document.querySelector("form").addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.querySelector("#email-login").value;
-    const senha = document.querySelector("#senha-login").value;
-
     try {
+      const email = document.querySelector("#email-login").value;
+      const senha = document.querySelector("#senha-login").value;
       const response = await fetch("http://localhost:3000/user/login", {
         method: "POST",
         headers: {
@@ -58,8 +57,7 @@ async function isLogged() {
       localStorage.removeItem("Token");
       window.location.href = "login.html";
     } else {
-      console.log(`usuario logado: ${data.user}`);
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
   } catch (error) {
     console.log("erro ao verificar token");
