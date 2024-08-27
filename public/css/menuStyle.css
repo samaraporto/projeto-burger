@@ -1,100 +1,97 @@
-:root{
-    background-color: black;
+:root {
+  background-color: black;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
-
-
-header img{
-    width: 100%;
-    max-height: 100px;
+header img {
+  width: 100%;
+  max-height: 100px;
 }
 
-footer img{
-    width: 100%;
-    max-height: 100px;
-    margin-top: 120px;
+footer img {
+  width: 100%;
+  max-height: 100px;
+  margin-top: 120px;
 }
 
-
-.cardapio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 46px;
+.cardapio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 46px;
 }
 
-.cardapio h1{
-    color: #BE9157;
-    font-size: 70px;
+.cardapio h1 {
+  color: #be9157;
+  font-size: 70px;
 }
 
-.produto img{
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
+.produto img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.burgers{
-    margin-top: 53px;
+.burgers {
+  margin-top: 53px;
 }
-.burgers p{
-    color: #FFB759;
-    font-size: 70px;
+.burgers p {
+  color: #ffb759;
+  font-size: 70px;
 }
-.produto{
-    display: flex;
-    gap: 33px;
-    padding-top: 104px;
+.produto {
+  display: flex;
+  gap: 33px;
+  padding-top: 104px;
 }
-.item-name{
-    font-size: 50px;
-    color: #BE9157;
-}
-
-.number-burger{
-    font-size: 35px;
+.item-name {
+  font-size: 50px;
+  color: #be9157;
 }
 
-.description{
-    max-width: 430px;
+.number-burger {
+  font-size: 35px;
 }
 
-.div-preco{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.description {
+  max-width: 430px;
 }
 
-.preco{
-    background-color: #FBB472;
-    width: 160px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    font-size: 35px;
+.div-preco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.preco p{
-    color: black;
+
+.preco {
+  background-color: #fbb472;
+  width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 35px;
 }
-.add-butao{
-    color: black;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.preco p {
+  color: black;
+}
+.add-butao {
+  color: black;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
 }
