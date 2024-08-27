@@ -27,7 +27,17 @@ async function main() {
         localStorage.setItem(`Token`, token);
         window.location.href = "index.html";
       } else {
-        console.log(`Erro: ${data.error || "Erro ao fazer login"}`);
+        const senhaDiv = document.querySelector(".div-login");
+        senhaDiv.innerHTML = "";
+        const div = document.createElement("div");
+        div.style.display = "flex";
+        div.style.justifyContent = "center";
+        div.style.paddingTop = "25px";
+        const p = document.createElement("p");
+        p.innerHTML = "E-mail ou senha inválidos";
+        p.style.color = "red";
+        div.appendChild(p);
+        senhaDiv.appendChild(div);
       }
     } catch (error) {
       console.log(`erro na requisição: ${error.message}`);
@@ -44,12 +54,12 @@ async function isLogged() {
       },
     });
     const data = await getProfile.json();
-    if(data.error || !data.user){
-      localStorage.removeItem('Token')
-      window.location.href = 'login.html'
-    }else{
+    if (data.error || !data.user) {
+      localStorage.removeItem("Token");
+      window.location.href = "login.html";
+    } else {
       console.log(`usuario logado: ${data.user}`);
-      window.location.href = 'login.html'
+      window.location.href = "login.html";
     }
   } catch (error) {
     console.log("erro ao verificar token");
