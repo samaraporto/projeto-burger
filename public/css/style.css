@@ -549,3 +549,6 @@ ul #lista-itens {
   width: 20px;
   text-align: center;
 }
+.informacoes{
+  color: red;
+}

@@ -50,8 +50,8 @@ async function main() {
     } else {
       if (nome.style.border != "2px solid red")
         nome.style.border = "2px solid red";
-      if (tamanhoNome <= 10)
-        infos.textContent = "O nome deve ter mais de 10 caracteres.";
+      if (tamanhoNome < 7 )
+        infos.textContent = "O seu nome não pode ser tão curto assim, pode?";
       if (partesNome.length <= 1)
         infos.textContent = "O nome deve conter pelo menos um sobrenome.";
       if (!regex.test(nome.value))
@@ -187,7 +187,7 @@ async function main() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: nome.value,
+          name: (nome.value).toUpperCase(),
           email: email.value,
           password: senha.value,
           phone_number: numeroDeTelefone.value,

@@ -39,7 +39,8 @@ async function login() {
 
       const user = await response.json();
       if (nomeUser && user.user != undefined) {
-        nomeUser.textContent = `Bem-vindo, ${user.user}!`;
+        let firstName = user.user.split(" ")
+        nomeUser.textContent = `Bem-vindo, ${firstName[0].charAt(0).toUpperCase() + firstName[0].slice(1).toLowerCase()}!`;
         console.log("user:", user);
       }
     } catch (error) {

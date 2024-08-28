@@ -47,6 +47,7 @@ async function addToCart(event) {
     const productID = event.target.id
     const product = await fetch(`http://localhost:3000/burguer/recuperar/${productID}`)
     const productData = await product.json()
+    productData.price = productData.price.toFixed(2)
     
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push(productData);
