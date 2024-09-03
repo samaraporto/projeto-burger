@@ -549,6 +549,12 @@ ul #lista-itens {
   width: 20px;
   text-align: center;
 }
-.informacoes{
+.informacoes {
   color: red;
+}
+
+.carrinho-vazio {
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
 }
